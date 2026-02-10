@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>asanori｜Йога-студия</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  background:#faf8f4;
+  color:#333;
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:80px 20px}
+
+/* HEADER */
+header{
+  position:fixed;top:0;width:100%;
+  background:rgba(255,255,255,.9);
+  z-index:99;
+}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+.nav ul{display:flex;gap:25px;list-style:none;font-size:14px}
+.logo{font-size:22px;letter-spacing:2px}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:url("https://images.unsplash.com/photo-1552196563-55cd4e45efb3") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+.hero-box{
+  background:rgba(255,255,255,.85);
+  padding:50px;
+  max-width:700px;
+}
+.hero h1{font-size:32px;margin-bottom:15px}
+.hero p{font-size:15px;margin-bottom:30px}
+.btn{
+  border:1px solid #9db3a0;
+  padding:12px 28px;
+  margin:5px;
+  display:inline-block;
+  font-size:14px;
+}
+.btn.primary{background:#9db3a0;color:#fff}
+
+/* STATS */
+.stats{display:flex;justify-content:center;gap:60px;margin-top:30px}
+.stats div{text-align:center;font-size:14px}
+
+/* WELCOME */
+.welcome{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.welcome img{width:100%;border-radius:4px}
+
+/* PROGRAMS */
+.programs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  text-align:center;
+}
+.programs i{
+  font-size:28px;
+  color:#9db3a0;
+  margin-bottom:15px;
+}
+.card{
+  background:#fff;
+  padding:40px 25px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:20px;
+}
+.gallery img{width:100%;height:100%;object-fit:cover}
+
+/* CTA */
+.cta{text-align:center}
+
+/* FOOTER */
+footer{
+  background:#3b3b3b;
+  color:#ccc;
+  padding:60px 20px;
+}
+.footer-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+  font-size:13px;
+}
+footer h4{color:#fff;margin-bottom:15px;font-size:14px}
+.copy{text-align:center;margin-top:40px;font-size:12px;color:#888}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .welcome{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .stats{flex-direction:column;gap:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">asanori</div>
+    <ul>
+      <li>Главная</li>
+      <li>О нас</li>
+      <li>Программы</li>
+      <li>Инструкторы</li>
+      <li>Абонементы</li>
+      <li>Контакты</li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>Новый опыт йоги для гармонии тела и разума</h1>
+    <p>
+      Пространство, где вы можете восстановить внутренний покой и баланс
+      в ритме современной жизни.
+      asanori — йога-студия, созданная для вас.
+    </p>
+
+    <a class="btn primary">Записаться на бесплатное занятие</a>
+    <a class="btn">Стать участником</a>
+
+    <div class="stats">
+      <div><strong>500+</strong><br>Участников</div>
+      <div><strong>50+</strong><br>Классов</div>
+      <div><strong>10+</strong><br>Инструкторов</div>
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME -->
+<section class="container welcome">
+  <div>
+    <h2>Добро пожаловать</h2>
+    <p>
+      asanori — это велнес-студия, объединяющая традиционный японский дух
+      и современную йогу.
+      Мы создаём пространство для гармонии тела, разума и дыхания.
+    </p>
+    <a class="btn">Наша история</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b">
+</section>
+
+<!-- PROGRAMS -->
+<section class="container">
+  <h2 style="text-align:center;margin-bottom:50px">Программы</h2>
+  <div class="programs">
+    <div class="card">
+      <i class="fa-solid fa-spa"></i>
+      <h4>Базовая йога</h4>
+      <p>Основы для начинающих</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-wind"></i>
+      <h4>Флоу-йога</h4>
+      <p>Движение в ритме дыхания</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-moon"></i>
+      <h4>Ресторативная йога</h4>
+      <p>Глубокое расслабление</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-leaf"></i>
+      <h4>Майндфулнесс</h4>
+      <p>Фокус на внутреннем состоянии</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="container">
+  <h2 style="text-align:center;margin-bottom:40px">Атмосфера студии</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3">
+    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="container cta">
+  <h2>Начните уже сегодня</h2>
+  <p>Ваш путь к благополучию начинается сейчас.</p>
+  <a class="btn primary">Записаться на бесплатное занятие</a>
+  <a class="btn">Посмотреть абонементы</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>asanori</h4>
+      <p>Тихое пространство для гармонии тела и разума.</p>
+    </div>
+    <div>
+      <h4>Студия</h4>
+      <p>О нас<br>Программы<br>Инструкторы</p>
+    </div>
+    <div>
+      <h4>Ресурсы</h4>
+      <p>Частые вопросы<br>Расписание</p>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <p>hello@asanori.shop<br>Токио, Япония</p>
+    </div>
+  </div>
+  <div class="copy">© 2026 asanori. Все права защищены.</div>
+</footer>
+
+</body>
+</html>
